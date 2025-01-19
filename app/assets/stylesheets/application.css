@@ -13,3 +13,37 @@
  *= require_tree .
  *= require_self
  */
+
+/* Center the grid letters */
+.letter-container {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #007bff;
+  margin: 5px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #007bff;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Results page message */
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+/* Center everything */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin-top: 20px;
+}
+
