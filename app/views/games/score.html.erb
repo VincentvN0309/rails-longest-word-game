@@ -1,0 +1,18 @@
+<h1 class="text-center mt-4">Game Results</h1>
+
+<div class="container text-center mt-5">
+  <!-- Message -->
+  <p class="<%= @score == 0 ? 'text-danger' : 'text-success' %> fs-4">
+    <%= @message %>
+  </p>
+
+  <!-- Total Score -->
+  <% if session[:total_score] %>
+    <p class="fs-5 mt-3">Total Score: <strong><%= session[:total_score] %></strong></p>
+  <% end %>
+
+  <!-- Play Again Button -->
+  <div class="mt-4">
+    <%= link_to "Play Again", new_path, class: "btn btn-success btn-lg" %>
+  </div>
+</div>
